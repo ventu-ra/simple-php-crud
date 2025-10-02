@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"nodemon --exec 'php -S localhost:8000 -t .' -e php\" \"browser-sync start --proxy 'localhost:8000' --files '*.php, *.css, *.js'\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^9.0.0",
+    "nodemon": "^3.1.0"
+  }
 }
