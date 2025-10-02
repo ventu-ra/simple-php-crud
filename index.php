@@ -40,7 +40,7 @@
           $sql = "select * from student";
           if ($result = mysqli_query($conn, $sql)) {
             if (mysqli_num_rows($result) > 0) {
-              echo "<table class=`table-bordered table-striped table-hover`>";
+              echo "<table class='table table-bordered table-striped table-hover '>";
               echo "<thead>";
               echo "<tr>";
               echo "<th>#</th>";
