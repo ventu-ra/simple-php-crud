@@ -1,0 +1,8 @@
+-- Active: 1759406026980@@172.17.0.2@3306@crud_db
+CREATE TABLE IF NOT EXISTS `people` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `address` VARCHAR(255) NOT NULL,
+    `nationality` VARCHAR(100) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 AUTO_INCREMENT = 12;
