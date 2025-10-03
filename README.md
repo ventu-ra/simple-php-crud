@@ -25,7 +25,7 @@ O projeto utiliza `nodemon`, `browser-sync` e `concurrently` para facilitar o de
 
 ## Referência
 
-Projeto original: "Welcome to PHP SIMPLE CRUD DESIGN" (livro/ebook)
+Projeto original: "Welcome to PHP SIMPLE CRUD DESIGN"
 
 ## Licença
 
