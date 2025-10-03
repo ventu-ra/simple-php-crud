@@ -40,10 +40,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           <p>Please fill this form and submit to add student to the database.</p>
           <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
             <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
               <label>Name</label>
               <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
               <span class="help-block"><?php echo $name_err; ?></span>
+            </div>
+
+            <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
+              <label for="">Address</label>
+              <textarea name="address" class="form-control"><?php echo $address; ?></textarea>
+              <span class="help-block"><?php echo $address_err; ?></span>
+            </div>
+
+            <div class="form-group <?php echo (!empty($marks_err)) ? 'has-error' : '' ?>">
+              <label for="">Marks</label>
+              <input type="text" name="marks" class="form-control" value="<?php echo $marks; ?>">
+              <span class="help-block"><?php echo $marks_err; ?></span>
             </div>
 
             <input type="submit" class="btn btn-primary" value="Submit">
