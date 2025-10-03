@@ -2,19 +2,26 @@
 
 # PHP Simple CRUD
 
-> **Compatível com PHP 8**
-
 Este projeto é um exemplo simples de CRUD (Create, Read, Update, Delete) em PHP, criado para fins de estudo e aprendizado da linguagem PHP.
 
 ## Sobre
 
 O código foi baseado no livro/ebook "Welcome to PHP SIMPLE CRUD DESIGN", voltado para estudantes e professores de Tecnologia da Informação e Ciência da Computação. O objetivo é facilitar o entendimento das operações básicas da web usando PHP.
 
+## Requisitos
+
+- **PHP 8**
+- **Node.js**
+
 ## Como executar
 
-1. Instale as dependências:
+1. Instale as dependências (escolha uma das opções):
 	```bash
 	npm install
+	# ou
+	bun install
+	# ou
+	pnpm install
 	```
 2. Inicie o servidor de desenvolvimento:
 	```bash
