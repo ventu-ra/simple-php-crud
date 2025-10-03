@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"nodemon --exec 'php -S localhost:8000 -t .' -e php\" \"browser-sync start --proxy 'localhost:8000' --files '*.php, *.css, *.js'\""
+    "dev": "concurrently \"nodemon --exec 'php -S localhost:8000 -t src/' -e src/php\" \"browser-sync start --proxy 'localhost:8000' --files 'src/*.php, src/*.css, src/*.js'\""
   },
   "keywords": [],
   "author": "",

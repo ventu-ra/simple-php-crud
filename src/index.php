@@ -34,7 +34,7 @@
 
           // Include config
           
-          require_once "config.php";
+          require_once "../config/config.php";
 
           // Attempt select query execution
           $sql = "select * from student";
