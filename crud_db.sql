@@ -3,7 +3,6 @@ CREATE TABLE IF NOT EXISTS `student` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(100) NOT NULL,
     `address` VARCHAR(255) NOT NULL,
-    `nationality` VARCHAR(100) NOT NULL,
     `marks` INT NOT NULL,
     PRIMARY KEY (`id`)
 );
