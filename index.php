@@ -72,7 +72,7 @@
               // Free result set
               mysqli_free_result($result);
             } else {
-              echo "<p class='lead'><em>No records were found.</em></p>";
+              echo "<p class='lead'><em>No students were found.</em></p>";
             }
           } else {
             echo "Error: Could not able to execute $sql. " . mysqli_error($conn);
