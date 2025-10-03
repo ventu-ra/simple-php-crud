@@ -15,7 +15,7 @@ O código foi baseado no livro/ebook "Welcome to PHP SIMPLE CRUD DESIGN", voltad
 
 ## Como executar
 
-1. Instale as dependências (escolha uma das opções):
+1. Instale as dependências:
 	```bash
 	npm install
 	# ou
