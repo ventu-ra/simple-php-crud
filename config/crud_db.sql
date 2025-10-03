@@ -15,26 +15,6 @@ VALUES (
         85
     ),
     (
-        'Carlos Souza',
-        'Av. Paulista, 456',
-        90
-    ),
-    (
-        'Maria Oliveira',
-        'Rua Verde, 789',
-        78
-    ),
-    (
-        'João Pereira',
-        'Rua Azul, 321',
-        88
-    ),
-    (
-        'Fernanda Lima',
-        'Av. Central, 654',
-        92
-    ),
-    (
         'Pedro Santos',
         'Rua Amarela, 987',
         80
