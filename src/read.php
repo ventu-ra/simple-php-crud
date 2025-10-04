@@ -6,6 +6,7 @@ if (!empty($my_option)) {
   // Include config file
 
   require_once "../config/config.php";
+  require_once "model/student.php";
 
   //Prepare a select statement
   $sql = "select * from student where id = ?";
@@ -24,9 +25,9 @@ if (!empty($my_option)) {
       if (mysqli_num_rows($result) == 1) {
 
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-        $name = $row["name"];
-        $address = $row["address"];
-        $marks = $row["marks"];
+        $student = new Student(name: $row["name"], address: $row["marks"], marks: "");
+
+
       } else {
         header("location:error.php");
         exit();
@@ -70,15 +71,15 @@ if (!empty($my_option)) {
           </div>
           <div class="form-group">
             <label>Name</label>
-            <p class="form-control-static"><?php echo $row["name"]; ?></p>
+            <p class="form-control-static"><?php echo $student->name; ?></p>
           </div>
           <div class="form-group">
             <label>Address</label>
-            <p class="form-control-static"><?php echo $row["address"]; ?></p>
+            <p class="form-control-static"><?php echo $student->address; ?></p>
           </div>
           <div class="form-group">
             <label>Marks</label>
-            <p class="form-control-static"><?php echo $row["marks"]; ?></p>
+            <p class="form-control-static"><?php echo $student->marks; ?></p>
           </div>
           <p><a href="index.php" class="btn btn-primary">Back</a></p>
         </div>
