@@ -52,17 +52,19 @@
               echo "</thead>";
               echo "<tbody>";
               while ($row = mysqli_fetch_array($result)) {
+                require_once "model/student.php";
+                $student = new Student(id: $row['id'], name: $row["name"], address: $row["marks"], marks: "");
                 echo "<tr>";
-                echo "<td>" . $row['id'] . "</td>";
-                echo "<td>" . $row['name'] . "</td>";
-                echo "<td>" . $row['address'] . "</td>";
-                echo "<td>" . $row['marks'] . "</td>";
+                echo "<td>" . $student->id . "</td>";
+                echo "<td>" . $student->name . "</td>";
+                echo "<td>" . $student->address . "</td>";
+                echo "<td>" . $student->marks . "</td>";
                 echo "<td>";
-                echo "<a href='read.php?id=" . $row['id'] . "' title='View Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-eye-open'></span></a>";
+                echo "<a href='read.php?id=" . $student->id . "' title='View Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-eye-open'></span></a>";
 
-                echo "<a href='update.php?id=" . $row['id'] . "' title='Update Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-pencil'></span></a>";
+                echo "<a href='update.php?id=" . $student->id . "' title='Update Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-pencil'></span></a>";
 
-                echo "<a href='delete.php?id=" . $row['id'] . "' title='Delete Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-trash'></span></a>";
+                echo "<a href='delete.php?id=" . $student->id . "' title='Delete Record' data-toggle='tooltip'><span class ='glyphicon glyphicon-trash'></span></a>";
                 echo "</td>";
                 echo "</tr>";
               }
